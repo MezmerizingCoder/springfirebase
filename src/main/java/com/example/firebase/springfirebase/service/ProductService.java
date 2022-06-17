@@ -59,7 +59,7 @@ public class ProductService {
 
         ApiFuture<WriteResult> collectionApiFuture = dbFirestore.collection(COLLECTION_NAME).document(name).delete();
 
-        return name + " Deleted";
+        return name + " Deleted Successfuly!";
     }
 
     public List<Product> getProductDetails() throws ExecutionException, InterruptedException {
